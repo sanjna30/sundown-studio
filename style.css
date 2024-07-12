@@ -33,7 +33,11 @@
 html, body{
     height: 100%;
     width: 100%;
+
     
+}
+#main{
+    background-color: #000;
 }
 
 #page-1{
@@ -78,7 +82,7 @@ nav{
     color: #000000bb;
     /* transition: all ease 0.4s; */
     position: relative;
-    font-size: 15px;
+    font-size: 18px;
     cursor: pointer;
    overflow: hidden;
     
@@ -364,28 +368,11 @@ nav{
 .elem:hover .overlay{
     top: 0;
 }
-#elem-container{
 
-    /* background-color: red; */
-}
-#fixed-img{
-    height:30vw ;
-    width: 24vw;
-    background-color: red;
-    border-radius: 10px;
-    position: fixed;
-    z-index: -1;
-    left: 50%;
-    top: 25%;
-    /* display: none; */
-}
+
 #top-text-img{
     display: flex;
     align-items: center;
-   
-    
-
-
 }
 #top-text-img img {
     height: 15px;
@@ -401,12 +388,70 @@ nav{
   
 
 }
-#page4{
-    min-height: 24vh;
-    width: 100%;
+
+
+.page-4{
     display: flex;
-    background-color: #EFEAE3;
+    height: 100vh;
     
+    background-color: #EFEAE3;
+    padding: 2.3vw;
 
 }
 
+
+
+.left-section {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0B0500;
+    border-radius: 10px;
+    width: 40%;
+}
+.left-section p{
+    color: #EFEAE3;
+    margin-left: 8vw;
+}
+
+.left-section h1 {
+    font-size: 4em;
+    line-height: 1.2;
+    color:#504A45;
+    margin-left: 8vw;
+}
+
+.left-section .highlight {
+    color: #EFEAE3;
+}
+
+.description {
+    font-size: 1.2em;
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.right-section img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+#page-5{
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+
+}
