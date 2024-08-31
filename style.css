@@ -38,6 +38,8 @@ html, body{
 }
 #main{
     background-color: #000;
+    position: relative;
+    z-index: 10;
 }
 
 #page-1{
@@ -334,49 +336,74 @@ nav{
      min-height: 100vh; 
     width: 100%;
     background-color: #EFEAE3;
-    position: relative;
     padding: 4vw 0;
 
 
 }
 .elem{
-    width: 100%;
     height: 150px;
+    width: 100%;
+    border-bottom: 1px solid #00000052;
     position: relative;
-    border-bottom: 1px solid #4b4040b5;
     display: flex;
-    overflow: hidden;
-    /* cursor: pointer; */
     align-items: center;
-    padding: 0 2vw ;
+    justify-content: space-between;
+    padding: 2vw;
+    overflow: hidden;
+    cursor: pointer;
 }
-.elem h2{
+
+.elem h2  {
     font-size: 3vw;
+    z-index: 9;
+    
    
-    position: relative;
+}
+.elem p{
+   font-size: 1vw;
+   font-weight: 300;
     z-index: 9;
 }
 .elem .overlay{
     height: 100%;
     width: 100%;
-    background-color: #FF9831;
+    background-color: #fc5f11;
     position: absolute;
     left: 0;
     top: -100%;
     transition: all ease 0.2s;
+
 }
 .elem:hover .overlay{
     top: 0;
 }
+.fixed-image{
+    height: 30vw;
+    width: 24vw;
+    /* background-color: red; */
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
 
+
+
+
+}
 
 #top-text-img{
     display: flex;
     align-items: center;
+    margin: 2vw;
+
 }
 #top-text-img img {
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
     margin-left: 25px;
     
     
@@ -385,18 +412,17 @@ nav{
     font-weight: 200;
     /* padding: 3.5vw; */
     font-size: 15px;
+    margin: 0.5vw;
   
 
 }
 
 
-.page-4{
+#page-4{
     display: flex;
     height: 100vh;
-    
     background-color: #EFEAE3;
     padding: 2.3vw;
-
 }
 
 
@@ -449,9 +475,33 @@ nav{
     border-radius: 10px;
 }
 
+
 #page-5{
-    height: 100vh;
+    height: 60vh;
     width: 100%;
     background-color: #EFEAE3;
+}
+#page-6{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #222; */
+} 
+#footer {
+    position: fixed;
+    height: 105vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    z-index: 9;
+    bottom: 0;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 1vw 3vw;
+}
 
+#footer h1 {
+    font-size: 23vw;
+    color: #fff;
 }
