@@ -2,7 +2,6 @@ const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true
 });
- 
 function page3Animation() {
     var elemC = document.querySelector(".elem-container");
 var fixed = document.querySelector(".fixed-image");
@@ -22,9 +21,6 @@ elemC.addEventListener("mouseleave", function(){
      })
  })
 }
-
-
-
 function swiperAnimation() {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
@@ -51,22 +47,14 @@ function menuAnimation() {
     })
 
 }
-
 function loaderAnimation() {
     var loader = document.querySelector("#loader")
     setTimeout(function () {
         loader.style.top = "-100%"
     }, 4200)
 }
-
-
-
-
-
-
 page3Animation();
-
-
 swiperAnimation()
 menuAnimation()
 loaderAnimation()
+

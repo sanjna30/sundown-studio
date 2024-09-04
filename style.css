@@ -36,8 +36,8 @@ html, body{
 
     
 }
-#main{
-    background-color: #000;
+#main {
+    /* background-color: #000; */
     position: relative;
     z-index: 10;
 }
@@ -503,5 +503,40 @@ nav{
 
 #footer h1 {
     font-size: 23vw;
-    color: #fff;
 }
+
+#footer-div {
+    height: 20vh;
+    width: 100%;
+    background-color: #FA460A;
+}
+
+#footer-bottom {
+    border-top: 1px solid #dadada;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer-bottom a{
+    color: #EFEAE3;
+    font-size: 15px;
+    line-height: 1;
+    gap: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 8;
+
+    
+
+}
+
+#footer-div h1{
+    font-size: 50px;
+    /* position: absolute; */
+    font-weight: 100px;
+
+    
+}
+
