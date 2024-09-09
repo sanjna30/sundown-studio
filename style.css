@@ -487,6 +487,7 @@ nav{
     /* background-color: #222; */
 } 
 #footer {
+    position: relative;
     position: fixed;
     height: 105vh;
     width: 100%;
@@ -503,12 +504,22 @@ nav{
 
 #footer h1 {
     font-size: 23vw;
+    position: relative;
 }
 
 #footer-div {
-    height: 20vh;
-    width: 100%;
-    background-color: #FA460A;
+    height: 40vw;
+    width: 100vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top right,#f92d04,#fc5f11);
+    bottom: 35%;
+    filter: blur(20px);
+    animation-name: gooey;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
 #footer-bottom {
@@ -523,6 +534,7 @@ nav{
     color: #EFEAE3;
     font-size: 15px;
     line-height: 1;
+    position: relative;
     gap: 10px;
     text-decoration: none;
     cursor: pointer;
@@ -534,7 +546,7 @@ nav{
 
 #footer-div h1{
     font-size: 50px;
-    /* position: absolute; */
+    position: relative;
     font-weight: 100px;
 
     
